@@ -6,12 +6,13 @@ theme:
   name: material
   palette:
     - media: '(prefers-color-scheme: light)'
+      primary: deep-purple
       scheme: default
       toggle:
         icon: material/weather-night
         name: 暗色模式
     - media: '(prefers-color-scheme: dark)'
-      primary: teal
+      primary: deep-purple
       scheme: slate
       toggle:
         icon: material/weather-sunny
@@ -21,8 +22,12 @@ theme:
     code: JetBrains Mono
   features:
     - content.code.copy
-    - navigation.tabs
+    # - navigation.tabs
     - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.integrate
   icon:
     repo: fontawesome/brands/git-alt
 
