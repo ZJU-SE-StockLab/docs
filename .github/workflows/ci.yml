@@ -18,5 +18,11 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs mkdocs-material mkdocs-heti-plugin
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+          branch: pages
+          clean: true
 
