@@ -28,6 +28,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     # - toc.integrate
+    - header.autohide
   icon:
     repo: fontawesome/brands/git-alt
 
